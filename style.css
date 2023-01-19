@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+body{
+    background-color: #F3F3F3;
+}
+ion-icon:hover {
+    color: #363636;
+}
+.desabilitada{
+    display: none;
+}
+.telaEntrada{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.entrando{
+    position: absolute;
+    top: 380px;
+    z-index: 2;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.logo2{
+    margin-top: 72px;
+}
+#nomeUsuario{
+    margin-top: 94px;
+    height: 54px;
+    width: 261px;
+    border: 1px solid #D7D7D7;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+#nomeUsuario::placeholder{
+    color: #AEAEAE;
+}
+.nomeInvalido{
+    margin-top: 5px;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.bEntrar{
+    border: none;
+    margin-top: 15px;
+    height: 45px;
+    width: 109px;
+    background-color: #E7E7E7;
+    color: #696969;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 9px;
+}
+.topo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+.container{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.mensagem{
+    font-family: 'Roboto', sans-serif;
+    padding: 9px;
+    margin-bottom: 4px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #fff;
+}
+.reservadas{
+    background-color: #FFDEDE;
+}
+.status{
+    background-color: #DCDCDC;
+}
+.nome{
+    word-wrap: break-word;
+    font-weight: 700;
+    margin-right: 5px;
+}
+.horario{
+    color: #AAAAAA;
+    margin-right: 5px;
+}
+.texto{
+    margin-right: 5px;
+    line-height: 30px;
+}
+.rodape{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+}
+.descricao{
+    font-family: 'Roboto', sans-serif;
+    color: #505050;
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 17px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.logo{
+    margin-left: 22px;
+}
+.iParticipantes{
+    margin-right: 22px;
+    width: 42px;
+    height: 31px;
+}
+.bEnviar{
+    color: #000;
+    width: 26px;
+    height: 26px;
+    margin-right: 18px;
+}
+.input{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#placeholder-text{
+    margin-left: 17px;
+    margin-right: 10px;
+    border: none;
+    height: 50%;
+    width: 100%;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+#placeholder-text::placeholder {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    opacity: 1;
+}
+.fundo{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);;
+}
+.listaParticipantes{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    background-color: #fff;
+    box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.25);
+    overflow-y: scroll;
+}
+.titulo{
+    height: 84px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+.naoRola{
+    overflow-y: hidden;
+}
+.participante{
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.iParticipante{
+    margin-left: 17px;
+    height: 25px;
+    width: 25px;
+}
+.caixaParticipante{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 36px;
+    width: 100%;
+}
+.caixaParticipanteV{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 36px;
+    width: 100%;
+}
+.caixaNome{
+    display: flex;
+    align-items: center;
+}
+.visibilidade{
+    height: 66px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.selecionado{
+    height: 10px;
+    width: 10px;
+    margin-right: 15px;
+}

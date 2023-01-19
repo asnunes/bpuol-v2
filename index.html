@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat UOL</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="telaEntrada">
+        <img class="logo2" src="./imagem/logo 2.png" alt="">
+        <input type="text" name="nome" id="nomeUsuario" placeholder="Digite seu nome" data-test="input-name">
+        <div class="nomeInvalido desabilitada">Digite outro nome, pois este já está em uso</div>
+        <button class="bEntrar" onclick="entrar()" data-test="send-name">Entrar</button>
+        <img src="./imagem/Loading_icon.gif" alt="" class="desabilitada">
+        <div class="entrando desabilitada">Entrando...</div>
+    </div>
+    <div class="topo">
+        <img class="logo" src="./imagem/logo 1.png" alt="logo da UOL">
+        <ion-icon class="iParticipantes" name="people" onclick="participantes()"
+            data-test="open-participants"></ion-icon>
+    </div>
+    <div class="container"></div>
+    <div class="rodape">
+        <div class="input">
+            <input id="placeholder-text" type=”text” name="name" placeholder="Escreva aqui..."
+                data-test="input-message">
+            <div class="descricao desabilitada" data-test="recipient"><span></span><span class="desabilitada">
+                    (reservadamente)</span></div>
+        </div>
+
+        <ion-icon class="bEnviar" name="paper-plane-outline" onclick="enviarMensagem(this)"
+            data-test="send-message"></ion-icon>
+    </div>
+    <div class="listaParticipantes desabilitada">
+        <div class="titulo">Escolha um contato<br>para enviar mensagem:</div>
+        <div class="caixaParticipante" onclick="selecionar(this)" data-test="all">
+            <div class="caixaNome"><ion-icon class="iParticipante" name="people"></ion-icon><span
+                    class="participante">Todos</span></div><img class="selecionado desabilitada"
+                src="./imagem/Vector.png" alt="" data-test="check">
+        </div>
+        <div class="lista"></div>
+        <div class="visibilidade">Escolha a visibilidade:</div>
+        <div class="caixaParticipanteV" onclick="selecionarV(this)" data-test="public">
+            <div class="caixaNome"><ion-icon class="iParticipante" name="lock-open"></ion-icon><span
+                    class="participante">Público</span></div><img class="selecionado desabilitada"
+                src="./imagem/Vector.png" alt="" data-test="check">
+        </div>
+        <div class="caixaParticipanteV" onclick="selecionarV(this)" data-test="private">
+            <div class="caixaNome"><ion-icon class="iParticipante" name="lock-closed"></ion-icon><span
+                    class="participante">Reservadamente</span></div><img class="selecionado desabilitada"
+                src="./imagem/Vector.png" alt="" data-test="check">
+        </div>
+    </div>
+    <div class="fundo desabilitada" onclick="encolher(this)"></div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
